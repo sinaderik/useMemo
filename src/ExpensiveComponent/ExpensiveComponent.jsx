@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 
 export default function ExpensiveComponent({ data, darkMode }) {
 
-    // Filter data without useMemo => only run the function when data changes
+    // Filter data with useMemo => only run the function when data changes
     const result = useMemo(() => {
         console.log(data)
 
